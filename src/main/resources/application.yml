@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: MediaServe
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/media_serve
+    username: postgres
+    password: 2901
+
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 10KB
+      max-file-size: 200MB
+      max-request-size: 215MB
+
+
+bot:
+  token: "6571991445:AAH6PsmgPHb5tg6p-EyKV0aE91aQ1ybavpU"
+  username: "t.me/medi_register_bot"
+
+file:
+  upload-dir: C:\JAVA\TAKRORLASH\FINISHED_PROJECT\MediServe\src\main\resources\uploads
+
+springdoc:
+  api-docs:
+    enabled: true
+
+stripe:
+  apiKey: sk_test_51PFHwcA2aUOpoGEB6kvMkkC3cs22cmlCbxpYFuWd4laPfattW3KLH5Zd10k002yRG7DhlkTnNSC7v7ASADRQjJwJ00kR3pvPmI
